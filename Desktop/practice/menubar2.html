@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Menubar ex2</title>
+  <!-- css  -->
+  <link href="css/menubar2.css" rel="stylesheet">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="wrapper-header">
+      <button class="btn slider-btn">Side Bar Menu</button>
+      <button class="btn toggle-btn" onclick="showcontent()">
+        <i id="togglebtn" class="fas fa-bars"></i>
+      </button>
+      <div id="toggle-content" class="toggle-content">
+        <ul>
+          <li><a class="link" href="#">Main</a></li>
+          <li><a class="link" href="#">Link</a></li>
+          <li><a class="link" href="#">Dropdown</a><i id='showmenu' class="fas fa-caret-down"></i></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- slidebpr -->
+    <!-- <div id="slider-wrapper" class="bg-light">
+      <div class="slider-header">
+        Toggle Menu
+      </div>
+        <div class="slider-list">
+          <a href="#">Dashboard</a>
+          <a href="#">Client</a>
+          <a href="#">Customer</a>
+          <a href="#">Profile</a>
+        </div>
+    </div> -->
+  </div>
+
+  <script src="js/menubar2.js"></script>
+</body>
+
+</html>

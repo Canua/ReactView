@@ -1,0 +1,53 @@
+#main-content {
+	/* background-color: green; */
+	margin: 5px;
+	width: 100%;
+}
+
+label {
+	font-size: 1.2rem;
+}
+
+input[type=text] {
+	font-size: 1.2rem;
+	margin-left: 5px;
+	padding: 0.4rem 0.5rem;
+}
+.col2 {
+	width: 185px;
+}
+
+.col1 {
+	width: 420px;
+}
+/* datepicker */
+.react-datepicker {
+	font-size: 1.3rem !important;
+  }
+  
+  .react-datepicker__current-month {
+	font-size: 1.5rem !important;
+  }
+  
+  .react-datepicker__header {
+	padding-top: 7px !important;
+  }
+  
+  .react-datepicker__navigation {
+	top: 11px !important;
+  }
+  
+  .react-datepicker__day-name, .react-datepicker__day {
+	margin: 1.2rem !important;
+  }
+  /* calender location */
+  .react-datepicker-popper {
+	transform: translate3d(20px, 152px, 0px) !important; 
+  }
+  /* datepicker */
+  .react-datepicker__input-container > input[type=text] {
+	  font-size: 1.2rem;
+	  margin-left: 2px;
+	  width: 185px;
+	  padding: 0.4rem 0.5rem;
+  }

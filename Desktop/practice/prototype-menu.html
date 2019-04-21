@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>prototype Menu</title>
+	<!-- css  -->
+	<link href="css/slider.css" rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+	<div id="wrapper" class="flex">prototype Menu
+		<!-- slidebpr -->
+		<div id="slider-wrapper" class="slider slider-color border-right">
+			<div class="slider-header">
+				<strong>Toggle Menu</strong>
+			</div>
+			<div class="slider-list">
+				<a href="#" class="slider-list-item">Dashboard</a>
+				<a href="#" class="slider-list-item">Client</a>
+				<a href="#" class="slider-list-item">Customer</a>
+				<a href="#" class="slider-list-item">Profile</a>
+			</div>
+		</div>
+		<!-- page-content -->
+		<div id="page-content-wrapper">
+			<!-- header -->
+			<div id="wrapper-header">
+				<button class="btn slider-btn" onclick="showslider()">slider Menu</button>
+				<button class="btn toggle-btn" onclick="showcontent()">
+					<i id="togglebtn" class="fas fa-bars"></i>
+				</button>
+				<div id="toggle-content" class="toggle-content">
+					<ul>
+						<li><a class="link" href="#">Main</a></li>
+						<li><a class="link" href="#">Link</a></li>
+						<li><a class="link" href="#">Dropdown</a><i id='showmenu' class="fas fa-caret-down"></i></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/slider.js"></script>
+</body>
+
+</html>

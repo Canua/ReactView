@@ -1,0 +1,27 @@
+#subtopic {
+	/* padding: .37rem 0.5rem; */
+	padding: 0.5rem .2rem;
+	background-color: #1D90FB;
+	height: auto;
+	display: flex;
+	border: 1px solid rgba(0, 0, 0, .125);
+}
+
+#subtopic .subtopic {
+	list-style: none;
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-between;
+	/* justify-content: center; */
+	padding: .5rem 1rem;
+}
+.subtopic-item {
+	padding: .75rem 2.25rem;
+	color: white;
+	border: 1px solid white;
+}
+
+.clicked {
+	background-color: hsla(0,0%,100%,.2);
+	/* transition: background-color .3s .2s; */
+}

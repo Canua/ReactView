@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:500&subset=latin-ext');
+
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+	text-align: left;
+	line-height: 1.5;
+	overflow-x: hidden;
+}
+
+#wrapper {
+	/* width: 508px; */
+	/* height: 829px; */
+	border: 1px solid #DBDBDB;
+}
+
+.flex {
+	display: flex;
+}
+
+#wrapper #wrapper-header {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	/* 브라우저가 flex 컨테이너의 기본 축과 그리드 컨테이너의 인라인 축을 따라 컨텐트 항목 사이 및 주위에 공간을 배포하는 방법을 정의 */
+	justify-content: space-between;
+	padding: .37rem 1rem;
+	background-color: #F7F7F7;
+	height: auto;
+	border: 1px solid rgba(0, 0, 0, .125);
+}
+
+#page-content-wrapper {
+	min-width: 100vw;
+}
+
+#slider-wrapper {
+	margin-left: -15rem;
+	min-height: 100vh;
+	transition: margin .25s ease-out;
+}
+
+#wrapper.toggled #slider-wrapper {
+	margin-left: 0;
+}
+
+/* 브라우저 화면  */
+@media (min-width: 768px) {
+	#wrapper #wrapper-header {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		/* 브라우저가 flex 컨테이너의 기본 축과 그리드 컨테이너의 인라인 축을 따라 컨텐트 항목 사이 및 주위에 공간을 배포하는 방법을 정의 */
+		justify-content: space-between;
+		padding: .5rem 1rem;
+		background-color: #F7F7F7;
+		height: auto;
+		border: 1px solid rgba(0, 0, 0, .125);
+	}
+
+	#page-content-wrapper {
+		min-width: 0;
+		width: 100%;
+	}
+/*  */
+	#slider-wrapper {
+		margin-left: 0;
+		/* transition: margin .25s ease-out;
+		min-height: 100vh;
+		border: 1px solid #929292;
+		background-color: #CFCFCF; */
+	}
+
+	#wrapper .toggled #slider-wrapper {
+		margin-left: -15rem;
+	}
+}
+
+.btn {
+	font-size: 18px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 10px 12px;
+	background-color: #1D90FB;
+	margin: 0;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.slider-btn {
+	/* margin-left: 10px; */
+}
+
+.toggle-btn {}
+
+#togglebtn {}
+
+.toggle-content {
+	display: none;
+	/* 플렉스 아이템의 초기 크기를 지정 */
+	flex-basis: 100%;
+	flex-grow: 1;
+	align-items: center;
+}
+
+.toggle-content ul {
+	margin-left: auto;
+	margin-top: .5rem;
+	display: flex;
+	flex-direction: column;
+	padding-left: 0;
+	margin-bottom: 0;
+	/* li 형태 설정 */
+	list-style: none;
+}
+
+.toggle-content li {
+	display: block;
+	padding: .5rem 1rem;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(9, 13, 10, 1);
+}
+
+strong {
+	font-weight: 200;
+	color: #2C2C2C;
+}
+
+.header-title {
+	color: white;
+}
+
+.border-right {
+	border-right: 1px solid #dee2e6;
+}
+
+.slider {}
+
+#slider-wrapper .slider-header {
+	padding: 0.875rem 1.25rem;
+	font-size: 1.35rem;
+}
+
+#slider-wrapper .slider-list {
+	width: 15rem;
+	display: flex;
+	flex-direction: column;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.slider-list .slider-list-item {
+	border-right: 0;
+	border-left: 0;
+	border-radius: 0;
+}
+
+.slider-list-item {
+	position: relative;
+	display: block;
+	padding: .75rem 1.25rem;
+	margin-bottom: -1px;
+	background-color: #F8F9FA;
+	border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.slider-color {
+	background: #F8F9FA;
+}
+
+.show {
+	display: block;
+}
+
+.toggled {
+	margin-left: 0;
+}
+
+#subtopic {
+	/* padding: .37rem 0.5rem; */
+	padding: 0.5rem .2rem;
+	background-color: #1D90FB;
+	height: auto;
+	display: flex;
+	border: 1px solid rgba(0, 0, 0, .125);
+}
+
+#subtopic .subtopic {
+	list-style: none;
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-between;
+	/* justify-content: center; */
+	padding: .5rem 1rem;
+}
+.subtopic-item {
+	padding: .75rem 2.25rem;
+	color: white;
+	border: 1px solid white;
+}
+
+.clicked {
+	background-color: hsla(0,0%,100%,.2);
+	/* transition: background-color .3s .2s; */
+}
+
+#main-content {
+	background-color: green;
+	width: 100%;
+}
+
+#footer {
+	width: 100%;
+	height: 90px;
+	position: absolute;
+	bottom: 0px;
+	background-color: red;
+}

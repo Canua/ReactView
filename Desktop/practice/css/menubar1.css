@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+}
+
+#wrapper {
+  width: 512px;
+  height: 843px;
+  border: 1px solid #1D90FB;
+  display: flex;
+}
+
+#wrapper #wrapper-menubar {
+  flex-direction: row;
+  height: 50px;
+  width: 100%;
+  background-color: #1D90FB;
+}
+
+#wrapper-menubar a {
+  color: #FFFFFF;
+  font-size: 200%;
+  text-decoration: none;
+}
+
+#wrapper-menubar .menubar-set {
+  float: right;
+  font-size: 200%;
+  color: #FFFFFF;
+  padding-right: 10px;
+}
+
+
+
+.menubar-set .dropbtn {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  /* inherit 부모 요소의 색상을 상속받는다. */
+  background-color: inherit;
+  margin: 0;
+}
+
+
+.dropdown-content {
+  margin-left: 170px;
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  /* 요소 최소 너비 */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#wrapper-menubar .dropdown-content a {
+  color: #414141;
+  font-size : 20px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+  display: block;
+}
+
+.showmenu {
+  /* 회전 */
+  transform: rotate(180deg);
+}

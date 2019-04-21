@@ -1,0 +1,26 @@
+.toggle-content {
+	display: none;
+	/* 플렉스 아이템의 초기 크기를 지정 */
+	flex-basis: 100%;
+	flex-grow: 1;
+	align-items: center;
+}
+
+.toggle-content ul {
+	margin-left: auto;
+	margin-top: .5rem;
+	display: flex;
+	flex-direction: column;
+	padding-left: 0;
+	margin-bottom: 0;
+	/* li 형태 설정 */
+	list-style: none;
+}
+
+.toggle-content li {
+	display: block;
+	padding: .5rem 1rem;
+}
+.show {
+    display: block;
+}

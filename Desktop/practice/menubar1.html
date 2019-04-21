@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Menubar ex1</title>
+  <!-- css  -->
+  <link href="css/menubar1.css" rel="stylesheet">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="wrapper-menubar">
+      <a href="#">
+        MenuBarb
+      </a>
+      <div class="menubar-set">
+        <i class="far fa-angry">Angry</i>
+        <i class="fas fa-cog">Setting</i>
+        <button onclick="openmenu()"class="dropbtn">
+          <i id='showmenu'class="fas fa-caret-down"></i>
+        </button>
+
+        <div id="dropdown" class="dropdown-content">
+          <a href="#">MenuBar1</a>
+          <a href="#">MenuBar2</a>
+          <a href="#">MenuBar3</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/menubar1.js"></script>
+</body>
+
+</html>

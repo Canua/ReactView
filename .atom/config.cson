@@ -1,0 +1,20 @@
+"*":
+  "atom-beautify":
+    js:
+      default_beautifier: "ESLint Fixer"
+  core:
+    disabledPackages: [
+      "linter-csslint"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "one-dark-syntax"
+    ]
+  editor:
+    fontSize: 19
+    softTabs: false
+    tabType: "hard"
+  "exception-reporting":
+    userId: "2af11619-53ea-4cd3-a28f-9f9b67071a02"
+  "linter-ui-default": {}

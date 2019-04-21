@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:500&subset=latin-ext');
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  text-align: left;
+  line-height: 1.5;
+}
+
+#wrapper {
+  width: 512px;
+  height: 843px;
+  border: 1px solid #DBDBDB;
+}
+
+#wrapper #wrapper-header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  /* 브라우저가 flex 컨테이너의 기본 축과 그리드 컨테이너의 인라인 축을 따라 컨텐트 항목 사이 및 주위에 공간을 배포하는 방법을 정의 */
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  background-color: #F7F7F7;
+  height: auto;
+  border-bottom: 1px solid #717171;
+}
+
+.btn {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 12px;
+  background-color: #1D90FB;
+  margin: 0;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.slider-btn {
+  margin-left: 10px;
+}
+
+.toggle-btn {}
+
+#togglebtn {}
+
+.toggle-content {
+  display: none;
+  /* 플렉스 아이템의 초기 크기를 지정 */
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.toggle-content ul {
+  margin-left: auto;
+  margin-top: .5rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  /* li 형태 설정 */
+  list-style: none;
+}
+
+.toggle-content li {
+  display: block;
+  padding: .5rem 1rem;
+}
+
+.toggle-content a {
+  text-decoration: none;
+  color: rgba(9, 13, 10, 1);
+}
+
+.show {
+  display: block;
+}
